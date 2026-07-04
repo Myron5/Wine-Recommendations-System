@@ -37,7 +37,5 @@ After that the confidence matrix should be created.
 
 ## Code snippet
 
-https://github.com/user-attachments/assets/0287d08a-9801-4c02-9217-a46daa78a287
-
-
+https://github.com/user-attachments/assets/ca733a39-568b-4c18-8cfc-8800c037ba32
 
