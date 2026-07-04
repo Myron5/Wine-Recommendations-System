@@ -23,7 +23,6 @@ python data-builder/main.py
 ```
 
 ## How the reasoning works
-vvV
 For each component the engine asks: 
 in the samples with the highest wine score (8) -
 How many times (or how often) did a pair of these wine components appears? 
@@ -37,4 +36,8 @@ After that the confidence matrix should be created.
 **Educational demonstration only - not actual winemaking advice.**
 
 ## Code snippet
-<img src="./code_snippet1.png">
+
+https://github.com/user-attachments/assets/0287d08a-9801-4c02-9217-a46daa78a287
+
+
+
