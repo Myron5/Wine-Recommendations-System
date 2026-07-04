@@ -1,0 +1,307 @@
+{
+    "red_wine_graph": {
+        "nodes": [
+            {
+                "id": "low_chlorides"
+            },
+            {
+                "id": "low_citric_acid"
+            },
+            {
+                "id": "low_density"
+            },
+            {
+                "id": "low_fixed_acidity"
+            },
+            {
+                "id": "low_free_sulfur_dioxide"
+            },
+            {
+                "id": "low_residual_sugar"
+            },
+            {
+                "id": "low_sulphates"
+            },
+            {
+                "id": "low_total_sulfur_dioxide"
+            },
+            {
+                "id": "low_volatile_acidity"
+            },
+            {
+                "id": "middle_alcohol"
+            },
+            {
+                "id": "middle_citric_acid"
+            },
+            {
+                "id": "middle_density"
+            },
+            {
+                "id": "middle_fixed_acidity"
+            },
+            {
+                "id": "middle_ph"
+            }
+        ],
+        "edges": [
+            {
+                "source": "low_chlorides",
+                "target": "low_citric_acid",
+                "weight": "7"
+            },
+            {
+                "source": "low_chlorides",
+                "target": "low_free_sulfur_dioxide",
+                "weight": "15"
+            },
+            {
+                "source": "low_chlorides",
+                "target": "low_residual_sugar",
+                "weight": "17"
+            },
+            {
+                "source": "low_chlorides",
+                "target": "low_total_sulfur_dioxide",
+                "weight": "18"
+            },
+            {
+                "source": "low_chlorides",
+                "target": "middle_citric_acid",
+                "weight": "9"
+            },
+            {
+                "source": "low_citric_acid",
+                "target": "low_fixed_acidity",
+                "weight": "7"
+            },
+            {
+                "source": "low_citric_acid",
+                "target": "low_residual_sugar",
+                "weight": "7"
+            },
+            {
+                "source": "low_density",
+                "target": "low_sulphates",
+                "weight": "7"
+            },
+            {
+                "source": "low_density",
+                "target": "low_total_sulfur_dioxide",
+                "weight": "7"
+            },
+            {
+                "source": "low_fixed_acidity",
+                "target": "low_volatile_acidity",
+                "weight": "8"
+            },
+            {
+                "source": "low_free_sulfur_dioxide",
+                "target": "low_residual_sugar",
+                "weight": "14"
+            },
+            {
+                "source": "low_free_sulfur_dioxide",
+                "target": "low_total_sulfur_dioxide",
+                "weight": "15"
+            },
+            {
+                "source": "low_free_sulfur_dioxide",
+                "target": "middle_density",
+                "weight": "11"
+            },
+            {
+                "source": "low_residual_sugar",
+                "target": "low_volatile_acidity",
+                "weight": "15"
+            },
+            {
+                "source": "low_residual_sugar",
+                "target": "middle_citric_acid",
+                "weight": "8"
+            },
+            {
+                "source": "low_sulphates",
+                "target": "middle_alcohol",
+                "weight": "9"
+            },
+            {
+                "source": "low_sulphates",
+                "target": "middle_density",
+                "weight": "9"
+            },
+            {
+                "source": "low_sulphates",
+                "target": "middle_ph",
+                "weight": "11"
+            },
+            {
+                "source": "low_total_sulfur_dioxide",
+                "target": "middle_density",
+                "weight": "11"
+            },
+            {
+                "source": "low_total_sulfur_dioxide",
+                "target": "middle_ph",
+                "weight": "12"
+            },
+            {
+                "source": "low_volatile_acidity",
+                "target": "middle_citric_acid",
+                "weight": "9"
+            },
+            {
+                "source": "low_volatile_acidity",
+                "target": "middle_fixed_acidity",
+                "weight": "7"
+            },
+            {
+                "source": "middle_citric_acid",
+                "target": "middle_fixed_acidity",
+                "weight": "7"
+            },
+            {
+                "source": "middle_density",
+                "target": "middle_ph",
+                "weight": "7"
+            }
+        ],
+        "directed": false,
+        "multigraph": false
+    },
+    "white_wine_graph": {
+        "nodes": [
+            {
+                "id": "low_chlorides"
+            },
+            {
+                "id": "low_citric_acid"
+            },
+            {
+                "id": "low_density"
+            },
+            {
+                "id": "low_fixed_acidity"
+            },
+            {
+                "id": "low_free_sulfur_dioxide"
+            },
+            {
+                "id": "low_residual_sugar"
+            },
+            {
+                "id": "low_total_sulfur_dioxide"
+            },
+            {
+                "id": "low_volatile_acidity"
+            },
+            {
+                "id": "middle_ph"
+            }
+        ],
+        "edges": [
+            {
+                "source": "low_chlorides",
+                "target": "low_citric_acid",
+                "weight": "173"
+            },
+            {
+                "source": "low_chlorides",
+                "target": "low_free_sulfur_dioxide",
+                "weight": "173"
+            },
+            {
+                "source": "low_chlorides",
+                "target": "low_residual_sugar",
+                "weight": "175"
+            },
+            {
+                "source": "low_chlorides",
+                "target": "low_total_sulfur_dioxide",
+                "weight": "137"
+            },
+            {
+                "source": "low_citric_acid",
+                "target": "low_fixed_acidity",
+                "weight": "128"
+            },
+            {
+                "source": "low_citric_acid",
+                "target": "low_residual_sugar",
+                "weight": "173"
+            },
+            {
+                "source": "low_citric_acid",
+                "target": "low_volatile_acidity",
+                "weight": "152"
+            },
+            {
+                "source": "low_density",
+                "target": "low_free_sulfur_dioxide",
+                "weight": "173"
+            },
+            {
+                "source": "low_density",
+                "target": "low_total_sulfur_dioxide",
+                "weight": "137"
+            },
+            {
+                "source": "low_density",
+                "target": "middle_ph",
+                "weight": "129"
+            },
+            {
+                "source": "low_free_sulfur_dioxide",
+                "target": "low_residual_sugar",
+                "weight": "173"
+            },
+            {
+                "source": "low_free_sulfur_dioxide",
+                "target": "low_total_sulfur_dioxide",
+                "weight": "137"
+            },
+            {
+                "source": "low_residual_sugar",
+                "target": "low_volatile_acidity",
+                "weight": "154"
+            }
+        ],
+        "directed": false,
+        "multigraph": false
+    },
+    "list_of_nodes": [
+        "high_alcohol",
+        "high_chlorides",
+        "high_citric_acid",
+        "high_density",
+        "high_fixed_acidity",
+        "high_free_sulfur_dioxide",
+        "high_ph",
+        "high_residual_sugar",
+        "high_sulphates",
+        "high_total_sulfur_dioxide",
+        "high_volatile_acidity",
+        "low_alcohol",
+        "low_chlorides",
+        "low_citric_acid",
+        "low_density",
+        "low_fixed_acidity",
+        "low_free_sulfur_dioxide",
+        "low_ph",
+        "low_residual_sugar",
+        "low_sulphates",
+        "low_total_sulfur_dioxide",
+        "low_volatile_acidity",
+        "middle_alcohol",
+        "middle_chlorides",
+        "middle_citric_acid",
+        "middle_density",
+        "middle_fixed_acidity",
+        "middle_free_sulfur_dioxide",
+        "middle_ph",
+        "middle_residual_sugar",
+        "middle_sulphates",
+        "middle_total_sulfur_dioxide",
+        "middle_volatile_acidity"
+    ]
+}
