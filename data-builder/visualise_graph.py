@@ -40,6 +40,19 @@ def draw_semantic_network(cooccurrence_df, threshold=1, key_name='red', title="W
     isolated_nodes = list(nx.isolates(G))
     G.remove_nodes_from(isolated_nodes)
 
+    # Attach explicit knowledge-representation types so the knowledge base
+    # is self-describing (semantic network with typed nodes and relations):
+    #   - every node is a ComponentState = a wine component at a qualitative level
+    #     e.g. "high_alcohol" -> component "alcohol", level "high"
+    #   - every edge is a typed "coOccursWith" relation (weight already set)
+    for node in G.nodes():
+        level, component = node.split("_", 1)
+        G.nodes[node]["type"] = "ComponentState"
+        G.nodes[node]["component"] = component
+        G.nodes[node]["level"] = level
+    for u, v in G.edges():
+        G[u][v]["relation"] = "coOccursWith"
+
     # 2: Draw the graph with matplotlib.
     plt.figure(figsize=(14, 11))
 

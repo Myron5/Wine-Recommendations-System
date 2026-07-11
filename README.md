@@ -29,8 +29,8 @@ How many times (or how often) did a pair of these wine components appears?
 That fraction is the confidence, and
 the matched components are shown.
 - The `data-builder` just creates a knowledge graph. We change all numbers to 3 categories low middle or high.
-After that the confidence matrix should be created.
-- The last part is `wine-reccomends-app` where Apriori Algorithm `(WineRecommendationService)` is used to interpretate KG and eliminate all duplications of categories.
+After that a co-occurrence matrix (how often component levels appear together in the best wines) is created and turned into the graph.
+- The last part is `wine-reccomends-app`, where a co-occurrence semantic network is interpreted by a simplified spreading-activation graph traversal `(WineRecommendationService)`: it walks the graph for direct and indirect (two-hop) neighbours, scores them by edge weight, and eliminates duplicate categories.
 ---
 
 **Educational demonstration only - not actual winemaking advice.**

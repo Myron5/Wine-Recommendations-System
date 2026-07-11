@@ -2,168 +2,234 @@
     "red_wine_graph": {
         "nodes": [
             {
-                "id": "low_chlorides"
+                "id": "low_chlorides",
+                "type": "ComponentState",
+                "component": "chlorides",
+                "level": "low"
             },
             {
-                "id": "low_citric_acid"
+                "id": "low_citric_acid",
+                "type": "ComponentState",
+                "component": "citric_acid",
+                "level": "low"
             },
             {
-                "id": "low_density"
+                "id": "low_density",
+                "type": "ComponentState",
+                "component": "density",
+                "level": "low"
             },
             {
-                "id": "low_fixed_acidity"
+                "id": "low_fixed_acidity",
+                "type": "ComponentState",
+                "component": "fixed_acidity",
+                "level": "low"
             },
             {
-                "id": "low_free_sulfur_dioxide"
+                "id": "low_free_sulfur_dioxide",
+                "type": "ComponentState",
+                "component": "free_sulfur_dioxide",
+                "level": "low"
             },
             {
-                "id": "low_residual_sugar"
+                "id": "low_residual_sugar",
+                "type": "ComponentState",
+                "component": "residual_sugar",
+                "level": "low"
             },
             {
-                "id": "low_sulphates"
+                "id": "low_sulphates",
+                "type": "ComponentState",
+                "component": "sulphates",
+                "level": "low"
             },
             {
-                "id": "low_total_sulfur_dioxide"
+                "id": "low_total_sulfur_dioxide",
+                "type": "ComponentState",
+                "component": "total_sulfur_dioxide",
+                "level": "low"
             },
             {
-                "id": "low_volatile_acidity"
+                "id": "low_volatile_acidity",
+                "type": "ComponentState",
+                "component": "volatile_acidity",
+                "level": "low"
             },
             {
-                "id": "middle_alcohol"
+                "id": "middle_alcohol",
+                "type": "ComponentState",
+                "component": "alcohol",
+                "level": "middle"
             },
             {
-                "id": "middle_citric_acid"
+                "id": "middle_citric_acid",
+                "type": "ComponentState",
+                "component": "citric_acid",
+                "level": "middle"
             },
             {
-                "id": "middle_density"
+                "id": "middle_density",
+                "type": "ComponentState",
+                "component": "density",
+                "level": "middle"
             },
             {
-                "id": "middle_fixed_acidity"
+                "id": "middle_fixed_acidity",
+                "type": "ComponentState",
+                "component": "fixed_acidity",
+                "level": "middle"
             },
             {
-                "id": "middle_ph"
+                "id": "middle_ph",
+                "type": "ComponentState",
+                "component": "ph",
+                "level": "middle"
             }
         ],
         "edges": [
             {
                 "source": "low_chlorides",
                 "target": "low_citric_acid",
-                "weight": "7"
+                "weight": "7",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_chlorides",
                 "target": "low_free_sulfur_dioxide",
-                "weight": "15"
+                "weight": "15",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_chlorides",
                 "target": "low_residual_sugar",
-                "weight": "17"
+                "weight": "17",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_chlorides",
                 "target": "low_total_sulfur_dioxide",
-                "weight": "18"
+                "weight": "18",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_chlorides",
                 "target": "middle_citric_acid",
-                "weight": "9"
+                "weight": "9",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_citric_acid",
                 "target": "low_fixed_acidity",
-                "weight": "7"
+                "weight": "7",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_citric_acid",
                 "target": "low_residual_sugar",
-                "weight": "7"
+                "weight": "7",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_density",
                 "target": "low_sulphates",
-                "weight": "7"
+                "weight": "7",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_density",
                 "target": "low_total_sulfur_dioxide",
-                "weight": "7"
+                "weight": "7",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_fixed_acidity",
                 "target": "low_volatile_acidity",
-                "weight": "8"
+                "weight": "8",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_free_sulfur_dioxide",
                 "target": "low_residual_sugar",
-                "weight": "14"
+                "weight": "14",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_free_sulfur_dioxide",
                 "target": "low_total_sulfur_dioxide",
-                "weight": "15"
+                "weight": "15",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_free_sulfur_dioxide",
                 "target": "middle_density",
-                "weight": "11"
+                "weight": "11",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_residual_sugar",
                 "target": "low_volatile_acidity",
-                "weight": "15"
+                "weight": "15",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_residual_sugar",
                 "target": "middle_citric_acid",
-                "weight": "8"
+                "weight": "8",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_sulphates",
                 "target": "middle_alcohol",
-                "weight": "9"
+                "weight": "9",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_sulphates",
                 "target": "middle_density",
-                "weight": "9"
+                "weight": "9",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_sulphates",
                 "target": "middle_ph",
-                "weight": "11"
+                "weight": "11",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_total_sulfur_dioxide",
                 "target": "middle_density",
-                "weight": "11"
+                "weight": "11",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_total_sulfur_dioxide",
                 "target": "middle_ph",
-                "weight": "12"
+                "weight": "12",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_volatile_acidity",
                 "target": "middle_citric_acid",
-                "weight": "9"
+                "weight": "9",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_volatile_acidity",
                 "target": "middle_fixed_acidity",
-                "weight": "7"
+                "weight": "7",
+                "relation": "coOccursWith"
             },
             {
                 "source": "middle_citric_acid",
                 "target": "middle_fixed_acidity",
-                "weight": "7"
+                "weight": "7",
+                "relation": "coOccursWith"
             },
             {
                 "source": "middle_density",
                 "target": "middle_ph",
-                "weight": "7"
+                "weight": "7",
+                "relation": "coOccursWith"
             }
         ],
         "directed": false,
@@ -172,98 +238,138 @@
     "white_wine_graph": {
         "nodes": [
             {
-                "id": "low_chlorides"
+                "id": "low_chlorides",
+                "type": "ComponentState",
+                "component": "chlorides",
+                "level": "low"
             },
             {
-                "id": "low_citric_acid"
+                "id": "low_citric_acid",
+                "type": "ComponentState",
+                "component": "citric_acid",
+                "level": "low"
             },
             {
-                "id": "low_density"
+                "id": "low_density",
+                "type": "ComponentState",
+                "component": "density",
+                "level": "low"
             },
             {
-                "id": "low_fixed_acidity"
+                "id": "low_fixed_acidity",
+                "type": "ComponentState",
+                "component": "fixed_acidity",
+                "level": "low"
             },
             {
-                "id": "low_free_sulfur_dioxide"
+                "id": "low_free_sulfur_dioxide",
+                "type": "ComponentState",
+                "component": "free_sulfur_dioxide",
+                "level": "low"
             },
             {
-                "id": "low_residual_sugar"
+                "id": "low_residual_sugar",
+                "type": "ComponentState",
+                "component": "residual_sugar",
+                "level": "low"
             },
             {
-                "id": "low_total_sulfur_dioxide"
+                "id": "low_total_sulfur_dioxide",
+                "type": "ComponentState",
+                "component": "total_sulfur_dioxide",
+                "level": "low"
             },
             {
-                "id": "low_volatile_acidity"
+                "id": "low_volatile_acidity",
+                "type": "ComponentState",
+                "component": "volatile_acidity",
+                "level": "low"
             },
             {
-                "id": "middle_ph"
+                "id": "middle_ph",
+                "type": "ComponentState",
+                "component": "ph",
+                "level": "middle"
             }
         ],
         "edges": [
             {
                 "source": "low_chlorides",
                 "target": "low_citric_acid",
-                "weight": "173"
+                "weight": "173",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_chlorides",
                 "target": "low_free_sulfur_dioxide",
-                "weight": "173"
+                "weight": "173",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_chlorides",
                 "target": "low_residual_sugar",
-                "weight": "175"
+                "weight": "175",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_chlorides",
                 "target": "low_total_sulfur_dioxide",
-                "weight": "137"
+                "weight": "137",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_citric_acid",
                 "target": "low_fixed_acidity",
-                "weight": "128"
+                "weight": "128",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_citric_acid",
                 "target": "low_residual_sugar",
-                "weight": "173"
+                "weight": "173",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_citric_acid",
                 "target": "low_volatile_acidity",
-                "weight": "152"
+                "weight": "152",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_density",
                 "target": "low_free_sulfur_dioxide",
-                "weight": "173"
+                "weight": "173",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_density",
                 "target": "low_total_sulfur_dioxide",
-                "weight": "137"
+                "weight": "137",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_density",
                 "target": "middle_ph",
-                "weight": "129"
+                "weight": "129",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_free_sulfur_dioxide",
                 "target": "low_residual_sugar",
-                "weight": "173"
+                "weight": "173",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_free_sulfur_dioxide",
                 "target": "low_total_sulfur_dioxide",
-                "weight": "137"
+                "weight": "137",
+                "relation": "coOccursWith"
             },
             {
                 "source": "low_residual_sugar",
                 "target": "low_volatile_acidity",
-                "weight": "154"
+                "weight": "154",
+                "relation": "coOccursWith"
             }
         ],
         "directed": false,
