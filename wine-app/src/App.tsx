@@ -1,8 +1,7 @@
-'use client';
-
 import { useEffect, useState } from "react";
 
-import { WineRecommendationService, Recommendation, GENERAL_KEYS } from "./utils/recommendation-engine";
+import { WineRecommendationService, GENERAL_KEYS } from "./utils/recommendation-engine";
+import type { Recommendation } from "./utils/recommendation-engine";
 import { transformFullListOfNodes } from "./utils/transformFullListOfNodes";
 import knowledge_base from '../public/knowledge_base.json';
 

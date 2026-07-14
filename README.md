@@ -1,11 +1,12 @@
 # Reccomendations Expert System
 
 A small knowledge graph system that suggests, which components needed to create the best wine,
-built for a Knowledge Representation course. The wine knowledge sits in `wine-reccomends-app/public/knowledge_base.json`, separate from the code.
+built for a Knowledge Representation course. The wine knowledge sits in `wine-app/public/knowledge_base.json`, separate from the code.
 
 ## Run it on your computer locally
 ```bash
-cd ./wine-reccomends-app
+cd ./wine-app
+npm install
 npm run dev
 ```
 
@@ -30,7 +31,7 @@ That fraction is the confidence, and
 the matched components are shown.
 - The `data-builder` just creates a knowledge graph. We change all numbers to 3 categories low middle or high.
 After that a co-occurrence matrix (how often component levels appear together in the best wines) is created and turned into the graph.
-- The last part is `wine-reccomends-app`, where a co-occurrence semantic network is interpreted by a simplified spreading-activation graph traversal `(WineRecommendationService)`: it walks the graph for direct and indirect (two-hop) neighbours, scores them by edge weight, and eliminates duplicate categories.
+- The last part is `wine-app`, where a co-occurrence semantic network is interpreted by a simplified spreading-activation graph traversal `(WineRecommendationService)`: it walks the graph for direct and indirect (two-hop) neighbours, scores them by edge weight, and eliminates duplicate categories.
 ---
 
 **Educational demonstration only - not actual winemaking advice.**

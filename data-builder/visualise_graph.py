@@ -4,8 +4,8 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from itertools import combinations
 
-os.makedirs('../wine-reccomends-app/public/', exist_ok=True)
-PATH_TO_IMG = './wine-reccomends-app/public/'
+os.makedirs('../wine-app/public/', exist_ok=True)
+PATH_TO_IMG = './wine-app/public/'
 
 
 def print_info_pairs(cooccurrence_df):

@@ -4,9 +4,9 @@ import os
 import networkx as nx
 import json
 
-os.makedirs('../wine-reccomends-app/public/', exist_ok=True)
+os.makedirs('../wine-app/public/', exist_ok=True)
 
-OUTPUT = './wine-reccomends-app/public/knowledge_base.json'
+OUTPUT = './wine-app/public/knowledge_base.json'
 
 def graph_to_json(graph):
     data = {
