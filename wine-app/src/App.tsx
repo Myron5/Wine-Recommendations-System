@@ -149,15 +149,15 @@ export default function Home() {
                           </div>
 
                           {/* Dynamic description based on the connection type */}
-                          <div className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
+                          <div className="mt-1 text-left text-xs text-zinc-500 dark:text-zinc-400">
                             {rec.type === 'direct' ? (
                               <span className="text-emerald-600 dark:text-emerald-400">
                                 ✓ Strong direct correlation
                               </span>
                             ) : (
                               <span>
-                                ℹ Alternative path via{" "}
-                                <strong className="text-zinc-700 dark:text-zinc-300">
+                                ℹ Alternative path via
+                                <strong className="block text-zinc-700 dark:text-zinc-300">
                                   {rec.viaNode}
                                 </strong>
                               </span>
