@@ -193,7 +193,7 @@ export default function Home() {
         {/* Image Container */}
         <div className="flex justify-center relative overflow-hidden rounded-lg border border-zinc-100 bg-zinc-50 p-2 dark:border-zinc-800 dark:bg-zinc-950">
           <img
-            src={wineType === GENERAL_KEYS.RED ? '/semantic_network_red.png' : '/semantic_network_white.png'}
+            src={`${import.meta.env.BASE_URL}${wineType === GENERAL_KEYS.RED ? 'semantic_network_red.png' : 'semantic_network_white.png'}`}
             width={1200}
             alt={`${wineType} wine semantic network graph`}
             className="h-auto object-contain rounded transition-opacity duration-300"
