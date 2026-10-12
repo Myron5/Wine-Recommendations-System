@@ -258,3 +258,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# docs/: track the final-report deliverables and the images, ignore everything else
+docs/*
+!docs/imgs/
+!docs/final_report/
+docs/final_report/*
+!docs/final_report/KR_final_report_template.pdf
+!docs/final_report/KR_final_report_template.tex
+!docs/final_report/literature.bib
