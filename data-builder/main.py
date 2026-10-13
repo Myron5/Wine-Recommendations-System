@@ -5,8 +5,8 @@ from visualise_graph import draw_semantic_network, print_info_pairs, show_duplic
 from helpers import PREFIXES_OF_5_CATEGORIES, PREFIXES_OF_3_CATEGORIES
 from graph_to_json import save_graph_with_key, add_additional_data
 
-RAW_DATA_RED = "data-builder\winequality-red.csv"
-RAW_DATA_WHITE = "data-builder\winequality-white.csv"
+RAW_DATA_RED = "data-builder/winequality-red.csv"
+RAW_DATA_WHITE = "data-builder/winequality-white.csv"
 
 # !!! START always from a folder one level higher
 

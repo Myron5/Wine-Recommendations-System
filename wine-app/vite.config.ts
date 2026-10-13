@@ -6,4 +6,5 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   base: '/Wine-Recommendations-System/',
   plugins: [react(), tailwindcss()],
+  server: { port: 5173 },
 })

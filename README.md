@@ -10,16 +10,27 @@ npm install
 npm run dev
 ```
 
-It starts a local server and opens the page in your browser at
-`http://localhost:3000`. Leave that window open while you use it; press
+It starts a local server. Open
+`http://localhost:5173/Wine-Recommendations-System/` in your browser. Leave that window open while you use it; press
 Ctrl+C to stop.
+
+## Run it with Docker
+
+Docker runs both parts: it rebuilds the knowledge base (`data-builder`) and then builds and serves the app (`wine-app`).
+
+```bash
+docker build -t wine-app .
+docker run --rm -p 5173:80 wine-app
+```
+
+Open `http://localhost:5173/Wine-Recommendations-System/` (the same address as with `npm run dev`). Inside the container the app runs on port 80 (Nginx); `-p 5173:80` connects it to port 5173 on your computer.
 
 ## Rebuild the knowledge base (optional)
 
-If you edit the dataset and want to regenerate `knowlevdge_base.json`:
+If you edit the dataset and want to regenerate `knowledge_base.json`:
 
 ```bash
-pip install pandas, networkx, matplotlib
+pip install pandas networkx matplotlib
 python data-builder/main.py
 ```
 
